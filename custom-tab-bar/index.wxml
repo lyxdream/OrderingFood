@@ -1,0 +1,10 @@
+<cover-view class="tab-bar" style='height:{{120+footerHeight}}rpx;'>
+  <cover-view class="tab-bar-border"></cover-view>
+  <cover-view wx:for="{{list}}" wx:key="index" class="tab-bar-item" data-path="{{item.pagePath}}" data-index="{{index}}" bindtap="switchTab">
+          <!-- <cover-image wx:if="{{item.isSpecial != null && item.isSpecial == true}}" src="{{item.iconPath}}" class='centerImage'></cover-image> -->
+         <cover-image  class='cover-image' src="{{selected === index ? item.selectedIconPath : item.iconPath}}">
+         </cover-image>
+          <cover-view class="number" wx:if="{{index==1}}">10</cover-view>
+           <cover-view style="color: {{selected === index ? selectedColor : color}}" class="text-font">{{item.text}}</cover-view>
+  </cover-view>
+</cover-view>

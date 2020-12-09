@@ -1,0 +1,27 @@
+<view>
+	<view class="mainMsg">
+		<image src="/images/loginIcon.png" alt="" class="loginIcon"></image>
+			<view class="bindMobileTips">
+          <text>首次登录</text>   
+          <text>，请绑定手机号码</text>  
+      </view>
+		<!-- 输入信息模块 -->
+		<view class="inputBox">
+			<view class="input"><input placeholder="请输入手机号码" value="{{phone}}" type="number"  confirm-type="done" disabled></input></view>
+		</view>
+		<view class="inputBox">
+				<view class="input">
+					<input placeholder="验证码" type="number" bindinput="getCodeValue" confirm-type="done" value="{{verifyCode}}"></input>
+				</view>
+				<view class="VerificationCode" bindtap="getVerifyCode">{{getCodeWord}}</view>
+		</view>
+		<!-- 绑定按钮 -->
+		<button class='VerificationCodeLogin' plain="false" bindtap="bindMobile">绑定</button>
+		<!-- 协议 -->
+		<view class="UserAgreement">
+					<baseRadio  checked="{{isReadTreaty}}" bindtap="changeReadTreatyStatus" ></baseRadio>
+					我已阅读并同意
+					<text data-isH5="true" data-path="xxx" bindtap="menuJump">《服务须知》</text>和<text data-isH5="true" data-path="xxx" bindtap="menuJump">《隐私政策》</text>
+		</view>
+	</view>
+</view>

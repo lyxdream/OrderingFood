@@ -1,0 +1,7 @@
+/* components/baseRadio/baseRadio.wxss */
+.radioImg .radio-img{
+  width: 32rpx;
+  height: 32rpx;
+  vertical-align: top;
+  margin-right: 8rpx;
+}

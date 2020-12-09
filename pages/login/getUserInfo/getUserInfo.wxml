@@ -1,0 +1,11 @@
+<!--pages/getUserInfo/getUserInfo.wxml-->
+<view>
+	  <view class="mainMsg">
+	    <image src="/images/loginIcon.png" alt="" class="loginIcon"></image>
+			<view class="bindMobileTips">
+          <text>首次登录</text>   
+          <text>，请绑定手机号码</text>  
+      </view>
+	   <button class='VerificationCodeLogin' plain="false" open-type='getPhoneNumber' bindgetphonenumber="getPhoneNumber" >微信手机号一键绑定</button>
+  </view>
+</view>

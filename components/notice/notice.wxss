@@ -1,0 +1,4 @@
+/* components/notice/notice.wxss */
+.notice{
+  height: 100rpx;
+}

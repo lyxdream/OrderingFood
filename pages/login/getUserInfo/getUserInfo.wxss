@@ -1,0 +1,52 @@
+/* pages/getUserInfo/getUserInfo.wxss */
+.mainMsg{
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  font-size: 32rpx;
+}
+.loginIcon{
+  width: 182rpx;
+  height: 134rpx;
+  margin: 68rpx auto;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.bindMobileTips{
+  margin-top: 80rpx;
+  font-size: 32rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center; 
+  background:rgba(238,238,238,0.5);
+  border-radius:30rpx;
+  border:2rpx solid rgba(238,238,238,1);  
+  margin: 0rpx 66rpx;                                 
+}
+.bindMobileTips text:nth-child(1){color: #F5A019;}
+.bindMobileTips text:nth-child(2){color: #000000;}
+.bindMobileTips text:nth-child(3){color: #000000;font-weight: bold;}
+button{
+  background-color: transparent;
+  padding-left: 0;
+  padding-right: 0;
+  line-height:inherit;
+  border:none;
+  border-radius:0;
+}
+.VerificationCodeLogin,button,button[plain],.button-hover[plain] {
+  height:80rpx;
+  line-height: 80rpx;
+  background:rgba(245,160,25,1);
+  border-radius:8rpx;
+  color: #fff;
+  margin-top: 100rpx;
+  text-align: center;
+  margin: 50rpx 66rpx 0px 66rpx;
+  border: none;
+  font-size: 32rpx;
+}
+.VerificationCodeLogin::after {
+  border-color: transparent;
+}

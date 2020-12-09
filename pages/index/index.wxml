@@ -1,0 +1,35 @@
+
+<view class="home-box">
+   <!-- 头部部分 -->
+    <view class="home-head" id="head">
+       
+    </view>
+    <!-- 商品列表部分 -->
+    <view  class='cont-pro' style="height:{{height-headHeight-footerHeight}}px">
+        <!-- 左侧列表 -->
+        <scroll-view  class='pro-left font28 color9' scroll-y="true" id="proLeft" scroll-top="{{leftscrollTop}}" >
+              <view wx:for="{{serviceTypes}}" class='pro-title {{index==currentLeft?"font30 color3 bgWhite":""}}' bindtap='proItemTap' data-pos='{{index}}'>
+                {{item.type}}
+              </view>
+        </scroll-view>
+        <view class='right-box'>
+            <!-- 公告部分 -->
+            <notice id="notice">
+            </notice>
+            <!-- 右侧列表 -->
+            <scroll-view class='pro-right' scroll-y="true"  scroll-into-view="{{selectId}}"  scroll-with-animation="true"  bindscroll="scrollEvent" scroll-top="{{scrollTop}}" style="height:{{height-headHeight-footerHeight-noticeHeight}}px">
+              <!-- id要用来实现点击左侧右侧滚动至相应位置的效果；class（pro-box）要用来计算右侧对应左侧某一分类的高度 -->
+              <!-- id: item0, item1, item2... （注意：不能直接使用数字或汉字做id）-->
+                  <view id='{{"item"+index}}' class='pro-box' wx:for="{{serviceTypes}}" wx:for-index="index" wx:for-item="item">
+                    <!-- 右侧列表里的标题，高度为50px -->
+                       <view class="item-title font30">{{item.type}}</view>
+                        <!-- 商品部分 -->
+                         <goods class='pro-item' wx:for="{{item.services}}" wx:for-index="idx" wx:for-item="itemName"  services="{{itemName}}"></goods>
+                  </view>
+            </scroll-view>
+        </view>
+    </view>
+
+</view>
+
+<!-- 底部组件 -->

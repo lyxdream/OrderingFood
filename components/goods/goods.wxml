@@ -1,0 +1,17 @@
+<view class='pro-item'>
+        <image class='pro-img' src='{{itemName.img}}'></image>
+        <view class='pro-text'>
+          <view class='item-name color3 font32'>{{itemName.name}}</view>
+          <view class='pro-tag'>
+            <text wx:for="{{itemName.label}}" wx:for-item="tag">{{tag}}</text>
+          </view>
+          <view class='pro-bottom'>
+            <text style='color:#C93131;' class='font32'>¥{{itemName.price}}</text>
+            <view class='count font30 color6'>
+              <text catchtap='subCount' data-pos='{{idx}}' data-index='{{index}}' data-sid='{{itemName.id}}'>-</text>
+              <text class='color3'>{{itemName.count?itemName.count:0}}</text>
+              <text catchtap='addCount' data-pos='{{idx}}' data-index='{{index}}' data-sid='{{itemName.id}}'>+</text>
+            </view>
+          </view>
+        </view>
+ </view>

@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "扫码点餐",
+  "navigationBarBackgroundColor": "#ffffff",
+  "navigationBarTextStyle": "black",
+  "disableScroll":true,
+  "usingComponents": {
+      "notice": "../../components/notice/notice",
+      "goods": "../../components/goods/goods"
+  }
+}

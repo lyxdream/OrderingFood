@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "baseRadio": "../../../components/baseRadio/baseRadio"
+  },
+  "navigationBarTitleText": "手机号绑定"
+}

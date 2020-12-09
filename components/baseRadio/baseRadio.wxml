@@ -1,0 +1,4 @@
+<!--components/baseRadio/baseRadio.wxml-->
+<view class="radioImg">
+    <image src="{{!checked?radioImg:radioImgCurr}}" class="radio-img"></image>
+</view>
