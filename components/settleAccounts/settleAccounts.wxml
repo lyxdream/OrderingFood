@@ -1,0 +1,12 @@
+<!--components/settleAccounts/settleAccounts.wxml-->
+<view class="settle-accounts">
+  <image src="/images/all.png" class="all-img"></image>
+ <view class="left-l">
+      <view class="accounts">
+         合计: <text class="i">￥</text><text class="number">90</text>
+      </view>
+ </view>
+ <view class="right-r">
+  去下单
+ </view>
+</view>

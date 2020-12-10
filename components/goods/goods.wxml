@@ -1,17 +1,11 @@
 <view class='pro-item'>
         <image class='pro-img' src='{{itemName.img}}'></image>
         <view class='pro-text'>
-          <view class='item-name color3 font32'>{{itemName.name}}</view>
-          <view class='pro-tag'>
-            <text wx:for="{{itemName.label}}" wx:for-item="tag">{{tag}}</text>
-          </view>
-          <view class='pro-bottom'>
-            <text style='color:#C93131;' class='font32'>¥{{itemName.price}}</text>
-            <view class='count font30 color6'>
-              <text catchtap='subCount' data-pos='{{idx}}' data-index='{{index}}' data-sid='{{itemName.id}}'>-</text>
-              <text class='color3'>{{itemName.count?itemName.count:0}}</text>
-              <text catchtap='addCount' data-pos='{{idx}}' data-index='{{index}}' data-sid='{{itemName.id}}'>+</text>
-            </view>
-          </view>
+              <view class='item-name'>{{itemName.name}}</view>
+              <view class='pro-bottom'>
+                    <text class='pro-price'><text>¥</text>{{itemName.price}}</text>
+                    <baseControl  number="{{itemName.count?itemName.count:0}}" bind:decrease="decrease"  bind:add="add" data-pos='{{idx}}' data-index='{{index}}' data-sid='{{itemName.id}}'>
+                    </baseControl>
+               </view>
         </view>
  </view>

@@ -1,4 +1,4 @@
 <!--components/notice/notice.wxml-->
-<view class="notice"  id="notice"> 
+<view class="notice"> 
        公告。。。。。。。。。。。。。。
 </view>

@@ -16,8 +16,8 @@
   },
   "tabBar": {
     "custom": false,
-    "color": "#7A7E83",
-    "selectedColor": "#3cc51f",
+    "color": "#cccccc",
+    "selectedColor": "#F5A019",
     "borderStyle": "black",
     "backgroundColor": "#ffffff",
     "position": "bottom",
@@ -30,14 +30,14 @@
       },
       {
         "pagePath": "pages/shopCart/shopCart",
-        "iconPath": "images/home.png",
-        "selectedIconPath": "images/homeCurr.png",
+        "iconPath": "images/cart.png",
+        "selectedIconPath": "images/cartCurr.png",
         "text": "购物车"
       },
       {
         "pagePath": "pages/order/order",
-        "iconPath": "images/home.png",
-        "selectedIconPath": "images/homeCurr.png",
+        "iconPath": "images/order.png",
+        "selectedIconPath": "images/orderCurr.png",
         "text": "订单"
       }
     ]

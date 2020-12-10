@@ -1,0 +1,48 @@
+/* components/settleAccounts/settleAccounts.wxss */
+.settle-accounts{
+  width:694rpx;
+  height:100rpx;
+  position: fixed;
+  bottom:0;
+  display: flex;
+  transform: translateX(-50%);
+  left:50%
+}
+.settle-accounts .all-img{
+  width:144rpx;
+  height: 120rpx;
+  position: absolute;
+  left:43rpx;
+  bottom:0;
+}
+.settle-accounts .left-l{
+  background-color:#494544;
+  width:504rpx;
+  height: 100%;
+  border-radius: 50rpx 0 0 50rpx;
+}
+.settle-accounts .right-r{
+  background-color:#F5A71F;
+  flex: 1;
+  height: 100%;
+  border-radius:0 50rpx 50rpx 0;
+}
+.settle-accounts .accounts{
+  font-size: 30rpx;
+  color:#fff;
+  line-height: 100rpx;
+  margin-left:200rpx;
+}
+.settle-accounts .accounts i{
+  font-size: 24rpx;
+}
+.settle-accounts .accounts .number{
+  font-size: 40rpx;
+}
+.settle-accounts .right-r{
+  color:#fff;
+  font-size: 30rpx;
+  line-height: 100rpx;
+  padding-left:50rpx;
+  box-sizing: border-box;
+}

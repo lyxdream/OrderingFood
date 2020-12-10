@@ -1,0 +1,26 @@
+/* components/searchBox/searchBox.wxss */
+.search-box{
+  width:100%;
+  padding-top:16rpx;
+  background-color: #fff;
+}
+.search-box .search-wrap{
+  width:684rpx;
+  height: 86rpx;
+  background: #F1F1F1;
+  border-radius: 8rpx;
+  margin:0 auto;
+  display: flex;
+  line-height: 86rpx;
+  align-items: center;
+}
+.search-box .icon{
+  width:40rpx;
+  height: 40rpx;
+  margin:0 20rpx;
+}
+.search-box  input{
+  width: 600rpx;
+  font-size: 28rpx;
+  color:#000;
+}

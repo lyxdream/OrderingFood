@@ -1,0 +1,7 @@
+<!--components/searchBox/searchBox.wxml-->
+<view class="search-box">
+      <view class="search-wrap">
+           <image src="/images/search.png" class="icon"></image>
+           <input type="text" placeholder="查看菜品" value="{{searchKey}}" bindinput="search"/>
+      </view>
+</view>

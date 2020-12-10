@@ -38,7 +38,7 @@
     },
     "compileType": "miniprogram",
     "libVersion": "2.10.3",
-    "appid": "xxxxxxxx",
+    "appid": "",
     "projectname": "bussiness",
     "debugOptions": {
         "hidedInDevtools": []

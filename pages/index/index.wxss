@@ -1,78 +1,119 @@
 /* pages/order/order.wxss */
 
-.font30{
-  font-size: 30rpx;
-}
-.color3{
-  color:#f00;
-}
-.bgWhite{
-  background-color:#fff;
-}
 /* ----------------------以上是公共样式--------------------- */
 page{
   height:100%;
   width:100%;
+  background-color: #F6F6F6;
 }
+
 .home-box{
   height:100%;
   width:100%;
   display: flex;
-  background-color: #ddd;
+  background-color: #F6F6F6;
   overflow: hidden;
   flex-direction: column;
 }
-.home-head{
-  height: 200rpx;
+.home-box .home-head{
   width:100%;
-  background:gray;
+  padding-bottom:20rpx;
 }
-
+.home-box .place-box{
+  height: 80rpx;
+  line-height: 80rpx;
+  width:100%;
+  background-color: #fff;
+  padding:0 34rpx;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+.home-box .place-box .icon-p{
+  width:32rpx;
+  height: 32rpx;
+  margin-right:10rpx;
+}
+.home-box .place-b{
+  font-size: 30rpx;
+  color:#333;
+  margin-right: 24rpx;
+}
+.home-box .num-b{
+  font-size: 28rpx;
+  color:#999;
+}
 /* 列表部分 */
-.cont-pro {
+.home-box .cont-pro {
   height: 100%;
   display: flex;
-  background-color: #fff;
+  background-color: #F6F6F6;
   overflow: hidden;
 }
 /* 左边部分 */
-.pro-left {
+.home-box .pro-left {
   width: 160rpx;
   flex-basis: 160rpx;
-  background-color: #f6f6f6;
+  background-color: #fff;
   overflow-y: scroll;
   /* padding-bottom:150rpx;     */
   /* 处理列表显示不全的问题 */
   box-sizing: border-box;
+  margin-right:16rpx;
+  border-radius: 8rpx;
 }
-.pro-title {
+.home-box .pro-title {
   width: 100%;
-  padding:40rpx 10rpx;
+  padding:24rpx 10rpx;
   text-align: center;
   box-sizing: border-box;
+  font-size: 28rpx;
+  background-color: #fff;
+}
+.home-box .pro-title.curr{
+  color:#F5A71F;
+  background-color: #F6F6F6;
+  position: relative;
+}
+.home-box .pro-title.curr:before{
+  content: "";
+  width:6rpx;
+  height: 56rpx;
+  background-color:#F5A71F;
+  position: absolute;
+  left:0;
+  transform: translateY(-50%);
+  top:50%
 }
 /* 右边部分 */
-.right-box{
+.home-box .right-box{
   flex: 1;
   height:100%;
   display: flex;
   flex-direction: column;
+  margin-right:32rpx;
 }
-.pro-right {
+.home-box .pro-right {
   width:100%;
   flex: 1;
-  background-color: #fff;
-  overflow-y: scroll;
-  /* padding-bottom:150rpx;     */ 
+  background-color: #F6F6F6;
+  overflow-y: scroll;  
   /* 自定义底部处理列表显示不全的问题 */
   box-sizing: border-box;
 }
-.item-title {
+.home-box .pro-box:last-child{
+   margin-bottom:120rpx;
+}
+.home-box .item-title {
   width: 100%;
   height: 50px;
   line-height: 100rpx;
   padding: 0 30rpx;
   box-sizing: border-box;
+}
+.home-box .pro-empty{
+  width:100%;
+  height: 50rpx;
 }
 
 

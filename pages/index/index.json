@@ -5,6 +5,8 @@
   "disableScroll":true,
   "usingComponents": {
       "notice": "../../components/notice/notice",
-      "goods": "../../components/goods/goods"
+      "goods": "../../components/goods/goods",
+      "searchBox":"../../components/searchBox/searchBox",
+      "settleAccounts":"../../components/settleAccounts/settleAccounts"
   }
 }

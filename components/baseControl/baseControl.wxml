@@ -1,0 +1,10 @@
+<!--components/baseControl/baseControl.wxml-->
+<view class="cartcontrol">
+    <view class="icon_img decrease" bindtap="decrease">
+         <image src="{{decreaseImg}}" class="radio-img"></image>
+    </view>
+     <text>{{num}}</text>
+      <view class="icon_img add" bindtap="add">
+         <image src="{{addImg}}" class="radio-img"></image>
+      </view>
+</view>
