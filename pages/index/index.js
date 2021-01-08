@@ -1,5 +1,6 @@
 const app = getApp()
 const utils = require('./../../utils/util.js'); //接口和key文件
+var plugin = requirePlugin("myPlugin")
 // pages/order/order.js
 Page({
 
@@ -130,6 +131,9 @@ Page({
     ], //项目列表数据
     contProHight:0,//商品列表部分的高度
     bottomHight:0,//底部部分占位的高度
+       openId:"oiY0v5c4UZy2dwFL-GlX_TiCBbU0",
+    cid:"e17368bf9ffd49b084a21a888da2a3fa",
+    phone:"17801129726",
   },
 
   /**
@@ -184,10 +188,6 @@ Page({
   search(e){
     console.log(e.detail)  
   },
-
-
-
-
 
   //点击左侧元素事件
   proItemTap(e) {

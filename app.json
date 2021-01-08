@@ -15,7 +15,7 @@
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
-    "custom": false,
+    "custom": true,
     "color": "#cccccc",
     "selectedColor": "#F5A019",
     "borderStyle": "black",
@@ -41,6 +41,12 @@
         "text": "订单"
       }
     ]
+  },
+  "plugins": {
+    "myPlugin": {
+      "version": "1.0.0",
+      "provider": "wxfef7e3ab99c0fbc8"
+    }
   },
   "sitemapLocation": "sitemap.json"
 }
